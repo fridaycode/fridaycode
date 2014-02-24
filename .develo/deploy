@@ -1,0 +1,34 @@
+##########################################################################
+#                                                                        #
+#  This script is called when you write the command : "develo deploy"    #
+#  on project with installed .develo                                     #
+#                                                                        #
+#  This script is a perfect place for logic like:                        #
+#                                                                        #
+#  If you are using Capistrano for example                               #
+#  | git push github master                                              #
+#  | cap deploy                                                          #
+#  | ... and so on.                                                      #
+#                                                                        #
+#  If you are using Heroku for example                                   #
+#  | git push github master                                              #
+#  | git push heroku master                                              #
+#  | heroku run rake db:migrate                                          #
+#  | ... and so on.                                                      #
+#                                                                        #
+#                        And stuff like these :)                         #
+#                                                                        #
+##########################################################################
+
+####
+# Replace these lines of echo code with your meaningful implementation
+
+echo "Hello from:"
+echo "$(pwd)/.develo/${BASH_SOURCE##*/}"
+echo
+echo "Now your ${BASH_SOURCE##*/} script is blank and useless!"
+echo "Hurry up and place your logic there to do something meaningful!"
+echo
+echo "Bye :)"
+
+####

@@ -1,0 +1,15 @@
+name: "Fridaycode.net"
+timezone: Europe/Sofia
+source: src
+# permalink: /blog/:title.html
+
+keywords: ""
+description: ""
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+pygments: true
+
+exclude: ["Rakefile", "Rakefile.rb", "*.sublime-project", "*.sublime-workspace", "gruntfile.js", "package.json", "node_modules"]
