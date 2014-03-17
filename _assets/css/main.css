@@ -355,7 +355,7 @@ ul, ol {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: 32rem) {
   .menu-button {
     display: block;
     position: absolute;
