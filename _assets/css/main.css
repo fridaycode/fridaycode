@@ -181,7 +181,7 @@ ul, ol {
   padding-top: 20rem;
   vertical-align: top;
   font-size: 1rem;
-  background: url('../img/freeman.png?1395084265') no-repeat 50% 1rem;
+  background: url('../img/freeman.png?1395085314') no-repeat 50% 1rem;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
@@ -230,7 +230,7 @@ ul, ol {
   text-align: center;
 }
 
-@media screen and (max-width: 76.8rem) {
+@media screen and (max-width: 32rem) {
   #wrapper {
     position: relative;
     width: 100%;
@@ -355,7 +355,7 @@ ul, ol {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
-@media screen and (max-width: 76.8rem) {
+@media screen and (max-width: 64rem) {
   .menu-button {
     display: block;
     position: absolute;
@@ -364,7 +364,7 @@ ul, ol {
     width: 7rem;
     height: 7rem;
     font-size: 0;
-    background: url('../img/icons/menu.png?1395084265') no-repeat 50% 50%;
+    background: url('../img/icons/menu.png?1395085314') no-repeat 50% 50%;
   }
 
   #sidebar nav ul a {
@@ -416,7 +416,7 @@ ul, ol {
   right: 0;
   height: 2rem;
   padding-left: 2rem;
-  background: url('../img/icons/time.png?1395084265') no-repeat;
+  background: url('../img/icons/time.png?1395085314') no-repeat;
 }
 .content p {
   margin-bottom: 1.4rem;
@@ -476,7 +476,7 @@ ul, ol {
   margin-left: 12rem;
 }
 
-@media screen and (max-width: 76.8rem) {
+@media screen and (max-width: 32rem) {
   #holder a.show {
     display: none;
   }
@@ -523,7 +523,7 @@ ul, ol {
   background-color: #5aa80d;
 }
 
-@media screen and (max-width: 76.8rem) {
+@media screen and (max-width: 32rem) {
   .button {
     float: none !important;
     display: block;
