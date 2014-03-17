@@ -1,0 +1,29 @@
+{
+  "name": "Fridaycode",
+  "source": ".",
+  "assetsSrc": "_assets",
+  "assetsDist": "assets",
+  "version": "0.0.1",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.1.1",
+    "grunt-newer": "~0.5.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-concurrent": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt-jekyll": "~0.4.1"
+  },
+  "author": [
+    "Pavel Ivanov <pivanov@mozilla.com>",
+    "Marian Ignev <m@ignev.net>"
+  ]
+}

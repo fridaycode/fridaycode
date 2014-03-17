@@ -1,0 +1,124 @@
+.push-left
+  float: left
+
+.push-right
+  float: right
+
+.push-center
+  width: 100%
+  text-align: center
+  padding: 1rem 0 2rem
+
+#wrapper
+  width: 98rem
+  height: 100%
+  min-height: 100%
+  margin: 0 auto
+  font-size: 0
+
+#sidebar
+  display: inline-block
+  width: 20rem
+  padding-top: 20rem
+  vertical-align: top
+  font-size: 1rem
+  background: image-url('freeman.png') no-repeat 50% 1rem
+  +transition(all 0.25s ease)
+
+  nav
+    border: 0.1rem solid #ccc
+    border-right: 0
+    background-color: #fff
+
+#holder
+  position: relative
+  display: inline-block
+  width: 78rem
+  min-height: 100%
+  vertical-align: top
+  font-size: 1rem
+  +transition(all 0.25s ease)
+
+#header
+  height: 7rem
+
+  .logo
+    position: absolute
+    top: 2rem
+    width: 16.4rem
+
+.content
+  > div
+    padding: 3rem
+    border: 0.1rem solid #ccc
+    background-color: #fff
+
+#footer
+  position: relative
+  height: 5rem
+  padding: 0
+  line-height: 5rem
+  font-size: 1.4rem
+  text-align: center
+
+
+@media screen and (max-width: 32rem)
+  #wrapper
+    position: relative
+    width: 100%
+    overflow: hidden
+
+  #sidebar
+    position: absolute
+    top: 0
+    right: 20%
+    bottom: 0
+    left: 0
+    width: auto
+    padding: 0
+    overflow: hidden
+    overflow-y: auto
+
+  #holder
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    width: auto
+    +single-box-shadow(rgba(0,0,0,.5), 0, 0, 0.8rem, 0)
+    overflow: hidden
+
+    &:target
+      +transform(translateX(80%))
+
+  .logo
+    position: absolute
+    top: 2rem
+    left: 50%
+    margin-left: -8.2rem
+
+  #social-share
+    display: none
+
+  #header
+    position: fixed
+    width: 100%
+    border-bottom: 0.1rem solid #ccc
+    background: #fff image-url('bg.png', false, false)
+    z-index: 1
+
+  .content
+    position: relative
+    top: 7rem
+    overflow-y: scroll
+    height: calc(100% - 7rem)
+
+    > div
+      border: none
+
+  #footer
+    border-top: 0.1rem solid #ccc
+    background: #fff image-url('bg.png', false, false)
+
+

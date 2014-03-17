@@ -1,0 +1,130 @@
+.content
+  font-size: 1.4rem
+
+  header
+    position: relative
+    padding-bottom: 3rem
+    margin-bottom: 1.4rem
+    color: #999
+    font-size: 1.6rem
+    border-bottom: 0.1rem solid #ccc
+
+  h3
+    color: #555
+    font-size: 4rem
+    line-height: 4.4rem
+
+  .author
+    position: absolute
+    bottom: 1rem
+    left: 0
+
+    > a
+      margin-left: 0.4rem
+      color: #3399FF
+      text-decoration: underline
+
+
+  .date
+    position: absolute
+    bottom: 1rem
+    right: 0
+    height: 2rem
+    padding-left: 2rem
+    background: image-url('icons/time.png') no-repeat
+
+  p
+    margin-bottom: 1.4rem
+    font-size: 1.6rem
+    +PtSerif
+
+  footer
+    overflow: hidden
+    padding: 2rem 0
+
+    .share
+      line-height: 4.2rem
+
+  .tags
+    clear: both
+    float: left
+    height: 2rem
+    margin-top: 2rem
+    padding-left: 2rem
+    color: #ccc
+    background: image-url('icons/tags.png', false, false) no-repeat
+
+    a
+      color: #3399FF
+      text-decoration: underline
+
+
+.author-info
+  padding-top: 3rem
+  border-top: 0.1rem solid #ccc
+
+  .image
+    float: left
+    width: 10rem
+    text-align: center
+
+    img
+      border-radius: 50%
+
+  .links
+    padding-top: 1rem
+    font-size: 0
+    text-align: center
+
+    a
+      display: inline-block
+      width: 2.4rem
+      height: 2.4rem
+      margin: 0 0.4rem
+
+  h4
+    margin-left: 12rem
+    font-size: 2.4rem
+    +PtSansNarrow
+
+  p
+    margin-left: 12rem
+
+
+@media screen and (max-width: 32rem)
+  #holder
+    a.show
+      display: none
+
+  #holder
+    &:target
+      .content
+        pointer-events: none
+
+      a.show
+        display: block
+
+  #holder
+    a.hide
+      display: block
+  #holder
+    &:target
+      a.hide
+        display: none
+
+  .content
+
+    .author,
+    .date
+      position: relative
+      bottom: auto
+      margin-top: 1rem
+
+    footer
+      .share
+        float: none !important
+        margin-top: 3rem
+
+    .tags
+      float: none !important
+

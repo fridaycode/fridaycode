@@ -1,0 +1,56 @@
+{% include header.html %}
+
+<div id="wrapper">
+  <section id="sidebar">
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Кодене</a>
+          <ul>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Ruby</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Бази Данни</a>
+          <ul>
+            <li><a href="">MongoDB</a></li>
+            <li><a href="">MySQL</a></li>
+            <li><a href="">PostgreSQL</a></li>
+            <!-- <li><a href="">Redis</a></li> -->
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </section>
+
+  <section id="holder">
+    <header id="header">
+      <a href="{{ site.url }}" class="logo">
+        <img src="/assets/img/logo.png" alt="Fridaycode.net" />
+      </a>
+
+      {% include social_share.html %}
+      <a href="#" class="menu-button show">Menu show</a>
+      <a href="#holder" class="menu-button hide">Menu hide</a>
+    </header>
+
+    <section class="content">
+      <div>
+        {{ content }}
+      </div>
+
+      <footer id="footer">
+        FridayCode.net &copy; Copyright 2009.
+      </footer>
+    </section>
+  </section>
+</div>
+
+{% include footer.html %}
+

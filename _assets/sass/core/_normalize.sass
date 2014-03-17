@@ -1,0 +1,123 @@
+*,
+*:after,
+*:before
+  @extend %bs-border-box
+
+html,body
+  height: 100%
+  margin: 0
+  color: #323232
+  font-size: 10px
+  +RobotoRegular
+  background: #fff image-url('bg.png', false, false)
+  -webkit-overflow-scrolling: touch
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  +transform(translate3d(0,0,0))
+
+// Correct 'block' display not defined in IE 8/9.
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+  display: block
+
+// Fallback for hidden="hidden" styling not present in IE 8/9 etc.
+[hidden]
+  display: none
+
+// all sort of content links
+a
+  color: #d58f1a
+  text-decoration: none
+
+  &:hover
+    text-decoration: none
+
+b, strong
+  font-weight: 700
+
+small
+  font-size: 80%
+
+hr
+  clear: both
+  height: 0
+  margin: 20px 0
+  border: 0
+  border-top: 1px solid #eee
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+  border: 0
+  vertical-align: middle
+
+p
+  margin: 0 0 10px
+
+  a
+    color: #f80
+    &:hover
+      text-decoration: underline
+
+// headings
+h1, .h1
+  color: #555
+  margin: 0 0 20px
+  font-size: 32px
+  font-weight: 300
+  +RobotoRegular
+
+h2, .h2
+  margin: 0 0 20px
+  font-size: 28px
+  font-weight: 300
+  +RobotoRegular
+
+h3, .h3
+  margin: 0 0 20px
+  font-size: 20px
+  font-weight: 300
+  +RobotoRegular
+
+h4, .h4
+  margin: 0 0 10px
+  font-size: 16px
+  font-weight: 400
+  +RobotoRegular
+
+h5, .h5
+  margin: 0 0 12px
+  font-size: 14px
+  font-weight: 400
+  +RobotoRegular
+
+h6, .h6
+  margin: 0 0 10px
+  font-size: 12px
+  font-weight: 400
+  +RobotoRegular
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+  +PtSansNarrow
+
+  a
+    color: #555
+    &:hover
+      color: #f80
+
+ul, ol
+  margin: 0
+  padding: 0
+  list-style: none

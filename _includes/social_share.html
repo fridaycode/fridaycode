@@ -1,0 +1,11 @@
+<div id="social-share">
+  <a href="#">
+    <img src="/assets/img/social/rss.png" title="RSS" alt="RSS share button" />
+  </a>
+  <a href="https://www.facebook.com/sharer.php?s=100&amp;p%5Burl%5D={{ canonical }}&amp;p%5Bimages%5D%5B0%5D={{ site.url }}/{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}&amp;p%5Btitle%5D={% if page.title %}{{ page.title | escape | replace:' ','%20' }}{% else %}{{ site.title | escape | replace:' ','%20' }}{% endif %}&amp;p%5Bsummary%5D={% if description != empty %}{{ description | strip_html | condense_spaces | truncate:150 | replace:' ','%20' }}{% endif %}">
+    <img src="/assets/img/social/facebook.png" title="Share on Facebook" alt="Facebook share button" />
+  </a>
+  <a href="https://twitter.com/intent/tweet?url={{ canonical }}&amp;text={% if page.title %}{{ page.title | escape | truncate:80 | replace:' ','%20' }}{% else %}{{ site.title | escape | truncate:80 | replace:' ','%20' }}{% endif %}&amp;via=okeeblow">
+    <img src="/assets/img/social/twitter.png" title="Share on Twitter" alt="Twitter share button" />
+  </a>
+</div>

@@ -1,0 +1,69 @@
+.menu-button
+  display: none
+
+
+#sidebar
+  nav
+    > ul
+      font-size: 1.6rem
+      +RobotoRegular
+
+      a
+        display: block
+        padding: 0.4rem 2rem
+        color: #777
+        font-size: 1.6rem
+        +RobotoRegular
+        background-color: transparent
+        +transition(all .2s linear)
+
+      > li
+        padding-bottom: 3rem
+        border-left: 0.6rem solid
+
+        &:first-of-type
+          border-color: #FACED2
+
+          &:hover
+            border-color: #f0717c
+
+          a:hover
+            color: #fff
+            background-color: #f0717c
+
+        &:nth-of-type(2)
+          border-color: #C9E9E5
+
+          &:hover
+            border-color: #63BFB2
+
+          a:hover
+            color: #fff
+            background-color: #63BFB2
+
+        > a
+          padding-top: 0.4rem
+          padding-bottom: 0.4rem
+          color: #323232
+          font-size: 2rem
+          font-family: 'PT Sans Narrow', sans-serif
+
+
+@media screen and (max-width: 32rem)
+
+  .menu-button
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 7rem
+    height: 7rem
+    font-size: 0
+    background: image-url('icons/menu.png') no-repeat 50% 50%
+
+  #sidebar
+    nav
+      ul
+        a
+          padding: 1rem 2rem
+
