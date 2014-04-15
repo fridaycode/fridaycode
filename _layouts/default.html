@@ -3,27 +3,32 @@
 <div id="wrapper">
   <section id="sidebar">
     <nav>
+
+      {% capture site_categories %}
+        {% for category in site.categories %}
+          {{ category | first }}
+        {% endfor%}
+      {% endcapture %}
       <ul>
-        <li>
-          <a href="#">Кодене</a>
-          <ul>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">Ruby</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Бази Данни</a>
-          <ul>
-            <li><a href="">MongoDB</a></li>
-            <li><a href="">MySQL</a></li>
-            <li><a href="">PostgreSQL</a></li>
-            <!-- <li><a href="">Redis</a></li> -->
-          </ul>
-        </li>
+        {% for groups in site.navigation %}
+          {% assign is_title_showed = false %}
+
+          {% for category in groups.group %}
+            {% assign category_downcase = category | downcase %}
+            {% if site_categories contains category_downcase %}
+              {% unless is_title_showed %}
+                <li>
+                  <h3>{{ groups.title }}</h3>
+                  <ul>
+                {% assign is_title_showed = true %}
+              {% endunless %}
+              <li><a href="/categories/{{ category | downcase }}/">{{ category }}</a></li>
+            {% endif %}
+          {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+
       </ul>
     </nav>
 

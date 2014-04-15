@@ -181,7 +181,7 @@ ul, ol {
   padding-top: 20rem;
   vertical-align: top;
   font-size: 1rem;
-  background: url('../img/freeman.png?1395085314') no-repeat 50% 1rem;
+  background: url('../img/freeman.png?1395092326') no-repeat 50% 1rem;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
@@ -216,6 +216,7 @@ ul, ol {
 }
 
 .content > div {
+  min-height: calc(100vh - 13rem);
   padding: 3rem;
   border: 0.1rem solid #cccccc;
   background-color: white;
@@ -347,9 +348,9 @@ ul, ol {
   color: white;
   background-color: #63bfb2;
 }
-#sidebar nav > ul > li > a {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+#sidebar nav > ul > li > h3 {
+  padding: 0.4rem 2rem;
+  margin: 0;
   color: #323232;
   font-size: 2rem;
   font-family: "PT Sans Narrow", sans-serif;
@@ -364,7 +365,7 @@ ul, ol {
     width: 7rem;
     height: 7rem;
     font-size: 0;
-    background: url('../img/icons/menu.png?1395085314') no-repeat 50% 50%;
+    background: url('../img/icons/menu.png?1395092326') no-repeat 50% 50%;
   }
 
   #sidebar nav ul a {
@@ -416,7 +417,7 @@ ul, ol {
   right: 0;
   height: 2rem;
   padding-left: 2rem;
-  background: url('../img/icons/time.png?1395085314') no-repeat;
+  background: url('../img/icons/time.png?1395092326') no-repeat;
 }
 .content p {
   margin-bottom: 1.4rem;
